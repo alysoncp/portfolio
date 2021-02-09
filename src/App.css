@@ -1,5 +1,47 @@
 .App {
   text-align: center;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 85vw;
+  margin: 35px 0px 0px 0px;
+  background-color: red;
+}
+
+.body {
+  width: 100vw;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.port-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+  margin: 35px 0px;
+  background-color: #61dafb;
+}
+
+.description {
+  width: 90%;
+  margin-top: 35px;
+  background-color: burlywood;
+}
+
+.port-item {
+  width: 80%;
+  margin: 50px;
+  padding: 35px;
+  background-color: purple;
 }
 
 .App-logo {
