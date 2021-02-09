@@ -47,6 +47,15 @@ function App() {
             <p>An early project built with two other junior developers. Suspending disbelief on the issues of securely storing passwords, we came up with a system for organizations to store their usernames and passwords to share with members of their organizations. Company accounts can be categorized.</p>
           </div>
 
+          {/* Tweeter */}
+          <div className="port-item">
+            <h3>Twitter Clone</h3>
+            <p>**Insert video here**</p>
+            <p><i><b>Github: </b></i>**Github Link</p>
+            <p><i><b>Stack: </b></i>  HTML, CSS, JQuery, Express, Node.js</p>
+            <p>Twitter Clone. Add a tweet, see all available tweets loaded chronologically </p>
+          </div>
+
 
           
           <div className="port-item">
