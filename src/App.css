@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: green;
+  background-color: rgb(17, 89, 94);
+background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,14 +11,26 @@
 }
 
 .header {
-  width: 85vw;
-  margin: 35px 0px 0px 0px;
-  background-color: red;
+  width: 90vw;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(61, 64, 91);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-buttons {
+  width: 30%;
+}
+
+.contact {
+  width: 30%;
 }
 
 .body {
   width: 100vw;
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,22 +40,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85vw;
-  margin: 35px 0px;
-  background-color: #61dafb;
+  width: 90vw;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.80);
+  border-radius: 5px;
 }
 
 .description {
   width: 90%;
   margin-top: 35px;
-  background-color: burlywood;
+  background-color: rgba(164, 74, 63, 0.9);
+  color: #e0ecee;
+  border-radius: 5px;
 }
 
 .port-item {
   width: 80%;
-  margin: 50px;
+  margin-top: 50px;
   padding: 35px;
-  background-color: purple;
+  background-color: rgba(61, 64, 91, 0.9);
+  color: #e0ecee;
+  border-radius: 5px;
 }
 
 .App-logo {

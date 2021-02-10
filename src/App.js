@@ -6,15 +6,26 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h3>Here's The Header</h3>
-        <h5>Alyson</h5>
+        <div className="nav-buttons">
+          <button>A button</button>
+          <button>A button</button>
+          <button>A button</button>
+        </div>
+        <div className="title">
+          <h1>Alyson Pickett</h1>
+          <h2>Web / Software Developer</h2>
+        </div>
+        <div className="contact">
+          <p>email: alyson.c.pickett@gmail.com</p>
+          <p>Github: kdjfkd</p>
+        </div>
       </div>
       <div className="body">
         <div className="port-items">
 
           {/* Quick description of me */}
           <div className="description">
-            Let's just cut to the chase... Here's my work
+            <h2>Let's cut the the chase - Here is my work: </h2>
           </div>
 
           {/* Virtual Bar App */}
