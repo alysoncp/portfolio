@@ -1,0 +1,27 @@
+import React from 'react'
+import Button from "@material-ui/core/Button";
+import './Entry.css';
+
+export default function Entry({title, stack, features, gitlink, livelink, gifpic}) {
+
+
+  return (
+    <div className="port-item port-right">
+           
+      <div className="port-item-text text-right">
+        <a href="https://virtual-bar-9a045.web.app/"><h2>{title}</h2></a> 
+        <p><i><b>Stack: </b></i>{stack}</p>
+        <p><i><b>Features: </b></i></p>
+        <p>{features}</p>
+        <div className="social-icons">
+          <Button className="social-button" variant="contained" onClick={() => window.open(gitlink, "_blank")} color="default">Github Repo</Button>
+          <Button className="social-button" variant="contained" onClick={() => window.open(livelink, "_blank")} color="secondary">Live Link</Button>
+        </div>
+      </div>  
+
+      <img className="app-video" src={gifpic} /> 
+        
+    </div>
+
+  )
+}

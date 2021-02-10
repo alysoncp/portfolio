@@ -1,0 +1,54 @@
+.port-item {
+  width: 80%;
+  margin-top: 50px;
+  padding: 40px 35px;
+  color: #e0ecee;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.port-left {
+  background-color: rgba(61, 64, 91, 0.9);
+}
+
+.port-right {
+  background-color: rgba(164, 74, 63, 0.9);
+}
+
+.port-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-left {
+  margin: -5px 0px 5px 40px;
+}
+
+.text-right {
+  margin: -5px 40px 5px 0px;
+}
+
+.port-item-text h2 {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-video {
+  width: 60%;
+}
+
+.social-icons {
+  width: 70%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
