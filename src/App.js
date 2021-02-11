@@ -2,6 +2,9 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import './App.css';
 import vbar from './img/vbar.gif'; 
+import python from './img/python.gif'
+import passwordkeeper from './img/passwordkeeper.gif'
+import jungle from './img/jungle.png'
 
 import Entryleft from "./Entryleft.js"
 import Entryright from "./Entryright.js"
@@ -9,27 +12,20 @@ import Entryright from "./Entryright.js"
 function App() {
   return (
     <div className="App">
+
       <div className="header">
-        <div className="title">
-          <h1>Alyson Pickett</h1>
-          <h3>Web / Software Developer</h3>
-        </div>
-        <div className="info">
-          <div className="contact">
-            <p>email: alyson.c.pickett@gmail.com</p>
-          </div>
-          <div className="nav-buttons">
-            <Button variant="contained" color="primary">About</Button>
-            <Button variant="contained" color="primary">Links</Button>
-          </div>
-        </div>
+        <h1>Alyson Pickett</h1>
+        <h3>Web / Software Developer</h3>
       </div>
+
       <div className="body">
         <div className="port-items">
 
           {/* Quick description of me */}
           <div className="description">
             <h2>About</h2>
+            <h4>Email: alyson.c.pickett@gmail.com</h4>
+            <h4>Github: <a href="https://github.com/alysoncp">https://github.com/alysoncp</a></h4>
             <h4>Professional interests include finance, dissemination of truth, cybersecurity, and machine learning</h4>
             <h3>Now let's cut to the chase, here's my work.</h3>
           </div>
@@ -48,50 +44,34 @@ function App() {
             <Entryright 
               title = "Python Stock Scraper"
               stack = "Python, Beautiful Soup"
-              features = "Scrapes data from Stock Guru(?) by entering a set of stock tickers and compiles them into a CSV for investor comparision"
-              gitlink = "https://github.com/alysoncp/virtual-bar"
-              gifpic = {vbar}
+              features = "Scrapes revenue and growth data from GuruFocus for a set of stock tickers and compiles them into a CSV for investor comparision"
+              gitlink = "https://github.com/alysoncp/ticker-list-revenue-scraper"
+              gifpic = {python}
             />
-
-
 
           {/* Password Keeper App */}
             <Entryleft 
               title = "Password Keeper"
               stack = "HTML, CSS, JQuery, Express, Node.js"
-              features = "An early project built with two other junior developers. Suspending disbelief on the issues of securely storing passwords, we came up with a system for organizations to store their usernames and passwords to share with members of their organizations. Company accounts can be categorized."
-              gitlink = "https://github.com/alysoncp/virtual-bar"
-              gifpic = {vbar}
+              features = "An early project built with two other junior developers. Suspending disbelief on the issues of securely storing passwords, we came up with a system for organizations to store their usernames and passwords to share with members of their organizations. Company accounts can be categorized and managed by users with admin privileges"
+              gitlink = "https://github.com/alysoncp/passwordkeeper"
+              gifpic = {passwordkeeper}
             />
 
+          {/* Jungle App*/}
+            <Entryright 
+              title = "Mock Amazon"
+              stack = "Ruby on Rails"
+              features = "Mock ecommerce site built with Ruby. View products by categories, see you cart, and checkout with stripe."
+              gitlink = "https://github.com/alysoncp/jungle"
+              gifpic = {jungle}
+            />
 
-
+          {/* Small footer */}
+          <div className="footer">
+            <p>Many more projects on my <a href="https://github.com/alysoncp"> <u>github</u> </a> </p>
+          </div>
         
-          {/* Tweeter */}
-          <div className="port-item port-item-odd">
-            <h3>Twitter Clone</h3>
-            <p>**Insert video here**</p>
-            <p><i><b>Github: </b></i>**Github Link</p>
-            <p><i><b>Stack: </b></i>  HTML, CSS, JQuery, Express, Node.js</p>
-            <p>Twitter Clone. Add a tweet, see all available tweets loaded chronologically </p>
-          </div>
-
-
-          
-          <div className="port-item">
-            Here's another portfolio item
-          </div>
-          <div className="port-item port-item-odd">
-            Here's a card
-          </div>
-          <div className="port-item">
-            Here's another portfolio item
-          </div> <div className="port-item">
-            Here's a card
-          </div>
-          <div className="port-item">
-            Here's another portfolio item
-          </div>
         </div>
       </div>
 

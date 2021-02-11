@@ -2,9 +2,16 @@ import React from 'react'
 import Button from "@material-ui/core/Button";
 import './Entry.css';
 
-export default function Entry({title, stack, features, gitlink, livelink, gifpic}) {
+export default function Entryright({title, stack, features, gitlink, livelink, gifpic}) {
 
-
+  const checkLink = () => {
+    if (livelink) {
+      return (
+        <Button className="social-button" variant="contained" onClick={() => window.open(livelink, "_blank")} color="secondary">Live Link</Button>
+      )
+    }
+  }
+  
   return (
     <div className="port-item port-right">
            
@@ -15,7 +22,7 @@ export default function Entry({title, stack, features, gitlink, livelink, gifpic
         <p>{features}</p>
         <div className="social-icons">
           <Button className="social-button" variant="contained" onClick={() => window.open(gitlink, "_blank")} color="default">Github Repo</Button>
-          <Button className="social-button" variant="contained" onClick={() => window.open(livelink, "_blank")} color="secondary">Live Link</Button>
+          {checkLink()}
         </div>
       </div>  
 
