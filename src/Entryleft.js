@@ -19,8 +19,8 @@ export default function Entryleft({title, stack, features, gitlink, livelink, gi
 
       <div className="port-item-text text-left">
         <a href="https://virtual-bar-9a045.web.app/"><h2>{title}</h2></a> 
-        <p><i><b>Stack: </b></i>{stack}</p>
-        <p><i><b>Features: </b></i></p>
+        <span><i><b>Stack: </b></i> {stack}</span><br/>
+        <span><i><b>Features: </b></i></span>
         <p>{features}</p>
         <div className="social-icons">
           <Button className="social-button" variant="contained" onClick={() => window.open(gitlink, "_blank")} color="default">Github Repo</Button>

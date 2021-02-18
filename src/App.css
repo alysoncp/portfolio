@@ -21,38 +21,8 @@ background-image: url("https://www.transparenttextures.com/patterns/black-thread
   align-items: center;
 }
 
-.buffer {
-  width: 25%;
-}
-
 .title {
   width: 50%;
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.nav-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 50px;
-}
-
-.nav-buttons > button {
-  background-color:rgb(17, 89, 94);
-  margin: 0px 10px;
-}
-
-.contact {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .body {
@@ -60,6 +30,10 @@ background-image: url("https://www.transparenttextures.com/patterns/black-thread
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.body h2 {
+  text-decoration: underline;
 }
 
 .port-items {
@@ -74,15 +48,32 @@ background-image: url("https://www.transparenttextures.com/patterns/black-thread
 }
 
 .description {
-  width: 90%;
+  width: 84%;
   margin-top: 35px;
-  background-color: rgba(164, 74, 63, 0.9);
   color: #e0ecee;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
 }
 
-.description h2 {
+.desc-content {
+  width: 45%;
+  background-color: rgb(17, 89, 94);
+  border-radius: 5px;
+  padding: 0px 25px 20px 25px;
+}
+
+.desc-content a:hover{
   text-decoration: underline;
+}
+
+.work-header {
+  width: 84%;
+  margin-top: 50px;
+  color: #e0ecee;
+  background-color: rgba(164, 74, 63, 0.9);
+  border-radius: 5px;
 }
 
 .footer {
